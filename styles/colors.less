@@ -1,20 +1,67 @@
+// Config -----------------------------------
+@syntax-hue:          220;
+@syntax-saturation:   13%;
+@syntax-brightness:   18%;
+
+// Monochrome -----------------------------------
+@mono-1: hsl(@syntax-hue, 14%, 71%); // default text
+@mono-2: hsl(@syntax-hue,  9%, 55%);
+@mono-3: hsl(@syntax-hue, 10%, 40%);
+
+// Colors -----------------------------------
+@hue-1:   hsl(187, 47%, 55%); // <-cyan
+@hue-2:   hsl(207, 82%, 66%); // <-blue
+@hue-3:   hsl(286, 60%, 67%); // <-purple
+@hue-4:   hsl( 95, 38%, 62%); // <-green
+
+@hue-5:   hsl(355, 65%, 65%); // <-red 1
+@hue-5-2: hsl(  5, 48%, 51%); // <-red 2
+
+@hue-6:   hsl( 29, 54%, 61%); // <-orange 1
+@hue-6-2: hsl( 39, 67%, 69%); // <-orange 2
+
+// Base colors -----------------------------------
+@syntax-fg:     @mono-1;
+@syntax-bg:     hsl(@syntax-hue, @syntax-saturation, @syntax-brightness);
+@syntax-gutter: darken(@syntax-fg, 26%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: hsl(@syntax-hue, 100%, 66% );
+
 // These colors are specific to the theme. Do not use in a package!
 
-@very-light-gray: #eff1f5; // light-gray-0
-@light-gray:      #c0c5ce; // light-gray-1
+@ghost-white:       #F8F8F0;
+@light-ghost-white: #F8F8F2;
+@light-gray:        #CCC;
+@gray:              #888;
+@brown-gray:        #49483E;
+@dark-gray:         #282828;
 
-@gray:            #65737e; // middle-gray-0
-@dark-gray:       #3d464f; // middle-gray-1
+@yellow:        desaturate(#E6DB74, 20%); // #E6DB74
+@blue:          #6c99bb; // #66D9EF;
+@pink:          #b05279; // #F92672;
+@purple:        #9e86c8; // #AE81FF;
+@brown:         #75715E;
+@orange:        #e87d3e; // #FD971F;
+@light-orange:  #e5b567; // #FFD569;
+@green:         #b4c973; // #A6E22E;
+@sea-green:     desaturate(#529B2F, 20%); // #529B2F
 
-@very-dark-gray:  #343d46; // dark-gray-0
-@super-dark-gray: #2e3239; // dark-gray-1
+// custom values
+@red: desaturate(#F92672, 20%);
 
-@cyan:    #9e86c8;
-@blue:    #6c99bb;
-@purple:  #b05279;
-@green:   #b4c973;
-@red:     #d02000;
-@orange:  #e87d3e;
-@yellow:  #e5b567;
+// old values
 
-@light-orange: #e5b567; // yellow
+// @very-light-gray: #eff1f5; // light-gray-0
+// @light-gray:      #c0c5ce; // light-gray-1
+// @gray:            #65737e; // middle-gray-0
+// @dark-gray:       #3d464f; // middle-gray-1
+// @very-dark-gray:  #343d46; // dark-gray-0
+// @super-dark-gray: #2e3239; // dark-gray-1
+//
+// @cyan:    #9e86c8;
+// @blue:    #6c99bb;
+// @purple:  #b05279;
+// @green:   #b4c973;
+// @red:     #d02000;
+// @orange:  #e87d3e;
+// @yellow:  #e5b567;
