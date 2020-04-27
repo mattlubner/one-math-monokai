@@ -208,7 +208,8 @@ atom-text-editor {
   // color: @blue;
   color: @pink;
 
-  &.syntax--type {
+  &.syntax--type,
+  &.syntax--modifier {
     font-style: italic;
     color: @blue;
   }
@@ -245,6 +246,10 @@ atom-text-editor {
 
 .syntax--variable {
   // color: @ghost-white;
+
+  &.syntax--property {
+    color: @light-orange;
+  }
 
   &.syntax--parameter {
     font-style: italic;
@@ -284,7 +289,7 @@ atom-text-editor {
     &.syntax--variable,
     &.syntax--parameters,
     &.syntax--array {
-      color: @yellow;
+      color: @light-orange;
     }
 
     &.syntax--parameters {
